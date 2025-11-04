@@ -1,0 +1,106 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/userpage.css' %}?v=3">
+    <title>Userpage</title>
+</head>
+<body>
+    {% include "navbar.html" %}
+    <div class="row m-5">
+        <!--Doctors page-->
+        <div class="col-12">
+            <div class="card mb-3" style="max-width: 90%;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                <img src="static/images/staff-12.webp" class="img-fluid rounded-end" alt="..." style="height: 250px; width: 100%;"     >
+                </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Doctors Managements</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <button type="button" class="btn btn-outline-primary btn-lg icon-link icon-link-hover" onclick="window.location.href='{% url 'Drlist' %}'">Open
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+                        <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                    </button>
+            </div>
+           </div>
+         </div>
+        </div>
+        <!--Tests Page-->
+              <div class="col-12">
+            <div class="card mb-3" style="max-width: 90%;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                <img src="static/images/blood2.png" class="img-fluid rounded-end" alt="..." style="height: 250px; width: 100%;">
+                </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Laboratory</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <button type="button" class="btn btn-outline-primary btn-lg icon-link icon-link-hover">Open
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+                        <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+           </div>
+         </div>
+        </div>
+        <!--Emergency Page-->
+            <div class="col-12">
+            <div class="card mb-3" style="max-width: 90%;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                <img src="static/images/facilities-3.webp" class="img-fluid rounded-end" alt="...">
+                </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Emergency</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <button type="button" class="btn btn-outline-primary btn-lg icon-link icon-link-hover">Open
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+                        <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+           </div>
+         </div>
+        </div>
+        <!--HR page-->
+        <div class="col-12">
+            <div class="card mb-3" style="max-width: 90%;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                <img src="static/images/consultation-4.webp" class="img-fluid rounded-end" alt="...">
+                </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <button type="button" class="btn btn-outline-primary btn-lg icon-link icon-link-hover">Open
+                        <svg xmlns="http://www.w3.org/2000/svg" class="bi" viewBox="0 0 16 16" aria-hidden="true">
+                        <path d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+           </div>
+         </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>

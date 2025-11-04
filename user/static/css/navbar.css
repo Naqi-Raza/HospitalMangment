@@ -1,0 +1,159 @@
+body{
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  overflow-x: hidden;
+}
+.navbar{
+    margin-top: 8px;
+    width: 100%;
+    height: 100px;
+ 
+
+}
+.navbar-brand h1{
+    font-size: 60px;
+}
+.navbar,.container-fluid,.collapse{
+    background-color: white;
+}
+.container-fluid{
+    height: 120px;
+}
+
+.carousel,.carousel-inner, .carousel-item  {
+      height: 500px; 
+      margin-top: 10px;
+      width: 100%;      /* set fixed height */
+         /* keep proportions, crop excess */
+    }
+/* For slides*/
+/* For main carousel */
+@media (max-width: 900px) {
+  #carouselExampleAutoplaying,
+  #carouselExampleAutoplaying .carousel,
+  #carouselExampleAutoplaying .carousel-inner,
+  #carouselExampleAutoplaying .carousel-item {
+    margin-top: 240px;
+  }
+}
+
+/* For doctor carousel */
+@media (max-width: 900px) {
+  #multiCardCarousel,
+  #multiCardCarousel .carousel,
+  #multiCardCarousel .carousel-inner,
+  #multiCardCarousel .carousel-item {
+    margin-top: 0px;
+  }
+}
+
+.carousel-item img{
+      height: 100%; 
+      width: 100%; 
+      object-fit: fill;  
+         /* set fixed height */
+      
+         /* keep proportions, crop excess */
+    }
+.carousel-control-prev,
+.carousel-control-next {
+  position: absolute;
+  top: 50%;                /* center vertically */
+  bottom: auto;            /* remove full-height stretching */
+  transform: translateY(50%);
+  width: 40px;             /* smaller clickable box */
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3); /* optional circle bg */
+  border-radius: 50%;      /* round shape */
+  z-index: 0;              /* keep above slides */
+}
+
+.carousel-control-prev-icon {
+  left: 15px; /* move inward */
+  background-color: rgb(174, 179, 180);
+  background-image: none;
+}
+
+.carousel-control-next-icon {
+  right: 15px; /* move inward */
+  background-color: rgb(174, 179, 180);
+  
+
+}
+
+
+
+.navbar-nav,.nav-item,.nav-link a{
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+.card-img-top img{
+  object-fit: fill;
+  width: 100%;
+}
+/* for main two test of leborty */
+/* for about */
+.about h1{
+  text-align: center;
+  font-size: 80px;
+  font-weight: 500;
+  
+}
+.main-image-container img{
+  height: 400px;
+  width: 650px;
+  margin-top: 20px;
+
+  margin-left: 50px;
+  border-radius: 10px;
+}
+.secondary-images img{
+  height: 200px;
+  width: 300px;
+  margin: 30px;
+  border-radius: 5px;
+}
+.stats-content{
+  height: 600px;
+  width: 500px;
+}
+.stats-content h3{
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.stats-content p{
+
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.stats-list{
+  width: 400px;
+  height: 400px;
+}
+.stat-row{
+  margin-bottom: 40px;
+  width: 400px;
+  height: 90px;
+  font-size: 17px;
+  display: flex;
+  justify-content: space-between;
+}
+.stat-number{
+  width: 200px;
+  font-size: 50px;
+  color: blue;
+}
+.stat-info{
+  margin-left: 40px;
+}
+/* for footer */
+footer{
+  background-color: rgb(31, 29, 29);
+  color: white;
+  margin-top: 40px;
+}

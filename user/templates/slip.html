@@ -1,0 +1,19 @@
+{% if alert %}
+<div class="slip">
+    <div class="alert alert-success alert-dismissible fade show "  role="alert">
+      <h5 class="alert-heading">Appointment Confirmed Slip</h5>
+      <hr>
+      <h1><strong>Dr:</strong>&nbsp;&nbsp; {{  doctor }}</h1>
+      <hr>
+      <p><strong>Patient:</strong>&nbsp;&nbsp; {{ patient}}</p>
+      <p><strong>Adress:</strong> &nbsp;&nbsp; {{ Adress }}</p>
+      <p><strong>Cell No:</strong> &nbsp;&nbsp;  {{ Cellno }}</p>
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      <div style="margin-top:14px; display:flex; gap:10px;">
+      <button class="btn" onclick="window.print()">🖨️ Print</button>
+      <button class="btn secondary" onclick="window.location.href='{% url 'appointment' %}'">⬇️ Save HTML</button>
+      <button class="btn secondary" onclick="window.location.href='{% url 'home' %}'">Close</button>
+      </div>
+    </div>
+</div>
+    {% endif %}

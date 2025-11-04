@@ -1,0 +1,35 @@
+ <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid" id="contenor">
+    <div class="img-fluid rounded float-start">
+    <a class="navbar-brand" href="#">
+      <img src="static/images/logo3.png" alt="Logo" width="200" height="180px"  class="d-inline-block align-text-top ms-3 img-fluid ">
+    </a></div>
+    <a class="navbar-brand" href="#"><h1>CareWell</h1></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarText">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{% url 'userpage' %}">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+      </ul>
+      <span>
+         
+          <a class="btn btn-primary " href="{% url 'login' %}" role="button" aria-disabled="true">Login</a>
+        
+        
+          <a class="btn btn-primary " href="#" role="button" aria-disabled="true">SignIn</a>
+        
+      </span>
+     
+    </div>
+  </div>
+</nav>
+       

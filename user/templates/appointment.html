@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/appointment.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <title>Appointment</title>
+</head>
+<body>
+    {% include "navbar.html" %}
+    <center>
+    <div class="form_box">
+        <div class="form_head">
+            <h1>Appointment</h1>
+        </div>
+        <form action="{% url 'bookingslip' %}" method="post">
+            {% csrf_token %}
+        <div class="form_body">
+            <div class="name">
+            <label for="name">Enter Your Name:</label><br>
+            <input type="text" id="name" value="" placeholder="--Name--" name="your_name" required></div>
+            <div class="adress">
+            <label for="adress">Enter Your Adress:</label><br>
+            <input type="text" placeholder="--city---" id="adress" name="your_adress"></div>
+            <label for="content">Enter Your Content No:</label><br>
+            <input type="number" placeholder="0300-00000" value="" name="your_number" required><br>
+            Dr. Name: <br><input type="text" value="{{Drname}}" name="Drname" readonly>
+            <br>
+            <input type="submit" value="Submit" id="sub"> </form>
+            
+        </div>
+    </div>
+    </center>
+    {% include "slip.html" %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+    </script>
+</body>
+</html>

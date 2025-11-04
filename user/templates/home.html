@@ -1,0 +1,183 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="static/images/logo3.png" type="icon">
+  <link rel="stylesheet" href="{% static 'css/navbar.css' %}">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <title>Hospital Management</title>
+</head>
+
+<body>
+  {% include "navbar.html" %}
+  <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="static/images/slide2.png" class="d-block w-100 img-fluid " alt="img Not found ...wait">
+      </div>
+      <div class="carousel-item">
+        <img src="static/images/slide1.png" class="d-block w-100 img-fluid" alt="img Not found...wait">
+      </div>
+      <div class="carousel-item">
+        <img src="static/images/slide3.png" class="d-block w-100 img-fluid " alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <center>
+    <h1>Qualified Doctors</h1>
+  </center>
+
+  <div id="multiCardCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+          <div class="col">
+
+            <div class="card">
+              <img src="static/images/Dr1.png" class="card-img-top img-fluid" alt="..."
+                style="height:300px;  object-fit:fill;">
+              <div class="card-body" style="height:150px;">
+                <form action="{% url 'appointment' %}" method="GET">
+                <h5 class="card-title" style="font-size:15px; margin:0%">CONSULTANT MEDICAL SPECIALIST</h5>
+                <h1 style="font-size:25px; margin:0%">Dr. Sadia Awan</h1>
+                <p class="card-text" style="font-size:10px;">MBBS(Medical University England),FCP(Medicine)
+                  <br>MACG(England)</p>
+                <a class="btn btn-primary " href="{% url 'appointment' %}?Drname=Dr Sadia Awan" role="button" aria-disabled="true">Appointment</a>
+              </div></form>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="static/images/Dr2.png" class="card-img-top" alt="...">
+              <div class="card-body" style="height:150px;">
+                <form action="{% url 'appointment' %}" method="GET">
+                <h5 class="card-title" style="font-size:15px; margin:0%">CARDIC SPECILIST</h5>
+                <h1 style="font-size:25px; margin:0%">Dr Hamid</h1>
+                <p class="card-text" style="font-size:10px;">MBBS(Medical University England),FCP(Medicine)
+                  <br>MACG(England)</p>
+                <a class="btn btn-primary " href="{% url 'appointment' %}?Drname=Dr Hamid" role="button" aria-disabled="true">Appointment</a>
+                </div></form>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="static/images/Dr3.png" class="card-img-top" alt="...">
+              <div class="card-body" style="height:150px;">
+                <form action="{% url 'appointment' %}" method="GET">
+                <h5 class="card-title" style="font-size:15px; margin:0%">CONSULTANT MEDICAL SPECIALIST</h5>
+                <h1 style="font-size:25px; margin:0%">Dr. Sadia Awan</h1>
+                <p class="card-text" style="font-size:10px;">MBBS(Medical University England),FCP(Medicine)
+                  <br>MACG(England)</p>
+                <a class="btn btn-primary " href="{% url 'appointment' %}" role="button" aria-disabled="true">Appointment</a>
+                </div></form>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="static/images/Dr4.png" class="card-img-top" alt="...">
+              <div class="card-body" style="height:150px;">
+                <form action="{% url 'appointment' %}" method="GET">
+                <h5 class="card-title" style="font-size:15px; margin:0%">CONSULTANT MEDICAL SPECIALIST</h5>
+                <h1 style="font-size:25px; margin:0%">Dr. Sadia Awan</h1>
+                <p class="card-text" style="font-size:10px;">MBBS(Medical University England),FCP(Medicine)
+                  <br>MACG(England)</p>
+                <a class="btn btn-primary " href="{% url 'appointment' %}" role="button" aria-disabled="true">Appointment</a>
+              </div></form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-3">
+          <div class="col">
+            <div class="card">
+              <img src="static/images/Dr5.png" class="card-img-top" alt="...">
+              <div class="card-body" style="height:150px;">
+                <form action="{% url 'appointment' %}" method="GET">
+                <h5 class="card-title" style="font-size:15px; margin:0%">CONSULTANT MEDICAL SPECIALIST</h5>
+                <h1 style="font-size:25px; margin:0%">Dr. Sadia Awan</h1>
+                <p class="card-text" style="font-size:10px;">MBBS(Medical University England),FCP(Medicine)
+                  <br>MACG(England)</p>
+                <a class="btn btn-primary " href="{% url 'appointment' %}" role="button" aria-disabled="true">Appointment</a>
+              </div></form>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="static/images/Dr6.png" class="card-img-top" alt="...">
+              <div class="card-body" style="height:150px;">
+                <form action="{% url 'appointment' %}" method="GET">
+                <h5 class="card-title" style="font-size:15px; margin:0%">CONSULTANT MEDICAL SPECIALIST</h5>
+                <h1 style="font-size:25px; margin:0%">Dr. Sadia Awan</h1>
+                <p class="card-text" style="font-size:10px;">MBBS(Medical University England),FCP(Medicine)
+                  <br>MACG(England)</p>
+                <a class="btn btn-primary " href="{% url 'appointment' %}" role="button" aria-disabled="true">Appointment</a>
+              </div></form>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="static/images/Dr7.png" class="card-img-top" alt="...">
+              <div class="card-body" style="height:150px;">
+                <form action="{% url 'appointment' %}" method="GET">
+                <h5 class="card-title" style="font-size:15px; margin:0%">CONSULTANT MEDICAL SPECIALIST</h5>
+                <h1 style="font-size:25px; margin:0%">Dr. Sadia Awan</h1>
+                <p class="card-text" style="font-size:10px;">MBBS(Medical University England),FCP(Medicine)
+                  <br>MACG(England)</p>
+                <a class="btn btn-primary " href="{% url 'appointment' %}" role="button" aria-disabled="true">Appointment</a>
+              </div></form>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <img src="static/images/Dr8.png" class="card-img-top" alt="...">
+              <div class="card-body" style="height:150px;">
+                <form action="{% url 'appointment' %}" method="GET">                  
+                <h5 class="card-title" style="font-size:15px; margin:0%">CONSULTANT MEDICAL SPECIALIST</h5>
+                <h1 style="font-size:25px; margin:0%" >Dr. Sadia Awan</h1>
+                <p class="card-text" style="font-size:10px;">MBBS(Medical University England),FCP(Medicine)
+                  <br>MACG(England)</p>
+                <a class="btn btn-primary " href="{% url 'appointment' %}?Drname=Dr Sadia Awan" role="button" aria-disabled="true">Appointment</a>
+              </div></form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#multiCardCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#multiCardCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+  {% include "Tests.html" %}
+  <hr>
+  {% include "about.html" %}
+  {% include "footer.html" %}
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
+  </script>
+</body>
+
+</html>

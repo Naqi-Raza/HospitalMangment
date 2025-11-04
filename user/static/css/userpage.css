@@ -1,0 +1,33 @@
+.navbar{
+    margin-top: 8px;
+    width: 100%;
+    height: 100px;
+ 
+
+}
+.navbar-brand h1{
+    font-size: 60px;
+}
+.navbar,.container-fluid,.collapse{
+    background-color: #FCDBC4;
+    
+}
+.container-fluid{
+    height: 120px;
+}
+
+.navbar-nav,.nav-item,.nav-link a{
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+.card{
+    margin-left: 70px;
+    border-radius: 30px;
+    shape-rendering: auto;
+    background-color: #FCDBC4;
+    color: black;
+}
+img{
+    border-radius: 30px;
+}
