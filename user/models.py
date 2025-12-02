@@ -1,6 +1,13 @@
 from django.db import models
 
 # Create your models here.
+class Employee(models.Model):
+    name = models.CharField(max_length=100)
+    email = models.EmailField(unique=True)
+    password = models.CharField(max_length=100)
+
+    def __str__(self):
+        return str(self.name)
 
 class Drsadia(models.Model):
     petient_name = models.CharField(max_length=100,default='Unknown')
@@ -86,3 +93,12 @@ class DrFaraz(models.Model):
 
     def __str__(self):
         return str(self.petient_name)
+class LabAppointment(models.Model):
+    patient_name = models.CharField(max_length=100)
+    address = models.TextField()
+    cell_no = models.CharField(max_length=15)
+    test_name = models.CharField(max_length=100)
+    appointment_date = models.DateTimeField(auto_now_add=True)  # Optional: store booking time
+
+    def __str__(self):
+        return f"{self.patient_name} - {self.test_name}"

@@ -8,6 +8,8 @@ body{
     margin-top: 8px;
     width: 100%;
     height: 100px;
+    
+    
  
 
 }
@@ -15,8 +17,8 @@ body{
     font-size: 60px;
 }
 .navbar,.container-fluid,.collapse{
-    background-color: white;
-}
+    background-color: rgb(220, 233, 237);}
+    
 .container-fluid{
     height: 120px;
 }
@@ -94,6 +96,7 @@ body{
 }
 .card-img-top img{
   object-fit: fill;
+  
   width: 100%;
 }
 /* for main two test of leborty */

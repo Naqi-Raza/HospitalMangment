@@ -1,10 +1,12 @@
 
 <div class="tests" >
-      <center> <h1 id="libority">Laboratory</h1></center>
+      <center> <h1 id="libority" style=" font-family:Arial, sans-serif; font-weight:700; margin-top:20px;
+    margin-bottom:30px; color:#2c3e50;  text-transform:uppercase;letter-spacing:1.5px; text-shadow: 2px 2px 6px rgba(0,0,0,0.25);">Laboratory</h1></center>
     <div class="row" style="--bs-gutter-x: 0;" >   
       <div class="col-md-3 ">
       <div class="card mb-3" style="height: 600px; width: 300px;  " > <img src="static/images/CTscan.png" alt="not find image" style="height:300px; width: 100%; object-fit:cover;">
-          <div class="card-body"> 
+          <div class="card-body">
+            <form action="{% url 'lab' %}" method="GET"> 
             <h3 class="card-title">Radiology & Imaging (Big Tests)</h3>
             <p class="card-text"><ul>
                 <li>MRI (Magnetic Resonance Imaging)</li>
@@ -12,8 +14,8 @@
             </ul></p>
           </div>
           <div class="card-footer">
-              <a class="btn btn-primary " href="#" role="button" aria-disabled="true">Appointment</a>
-            </div>
+              <a class="btn btn-primary " href="{% url 'lab' %}?Testname=Radiology & Imaging" role="button" aria-disabled="true">Appointment</a>
+            </div></form>
         </div>
         </div>
     
@@ -22,6 +24,7 @@
       
           <div class="card  mb-3" style="height: 600px; width: 300px; " ><img src="static/images/blood.png" alt=" no found img" style="height:300px; width: 100%; object-fit:cover;">
             <div class="card-body"> 
+              <form action="{% url 'lab' %}" method="GET"> 
             <h3 class="card-link">Hematology (Blood Tests)</h3>
             <p class="card-text"><ul>
                 <li>CBC (Complete Blood Count)</li>
@@ -29,14 +32,15 @@
             </ul></p>  
             </div>
             <div class="card-footer">
-              <a class="btn btn-primary " href="#" role="button" aria-disabled="true">Appointment</a>
-            </div>
+              <a class="btn btn-primary " href="{% url 'lab' %}?Testname=Hematology(Blood Tests)" role="button" aria-disabled="true">Appointment</a>
+            </div></form>
           </div>     
     </div>
     <div class="col-md-3 ">
       
       <div class="card  mb-3" style="height: 600px; width: 300px; "><img src="static/images/X-Ray.png" alt=" no found img" style="height:300px;width: 100%; object-fit:cover;">
-            <div class="card-body"> 
+            <div class="card-body">
+              <form action="{% url 'lab' %}" method="GET">  
             <h3 class="card-link">X-RAY</h3>
             <p class="card-text"><ul>
                 <li>Chest X-Ray (PA View / AP View)</li>
@@ -44,13 +48,14 @@
             </ul></p>  
             </div>
             <div class="card-footer">
-              <a class="btn btn-primary " href="#" role="button" aria-disabled="true">Appointment</a>
-            </div>
+              <a class="btn btn-primary " href="{% url 'lab' %}?Testname=X-Ray" role="button" aria-disabled="true">Appointment</a>
+            </div></form>
           </div>     
       </div>
     <div class="col-md-3 ">
           <div class="card  mb-3" style="height: 600px; width: 300px;"><img src="static/images/ultrasound.png" alt=" no found img" style="height:300px; width: 100%; object-fit:cover;">
-            <div class="card-body"> 
+            <div class="card-body">
+              <form action="{% url 'lab' %}" method="GET">  
             <h3 class="card-link">Ultrasound</h3>
             <p class="card-text"><ul>
                 <li>Doppler Ultrasound</li>
@@ -59,8 +64,8 @@
             </ul></p>  
             </div>
             <div class="card-footer">
-              <a class="btn btn-primary " href="#" role="button" aria-disabled="true">Appointment</a>
-            </div>
+              <a class="btn btn-primary " href="{% url 'lab' %}?Testname=Ultrasound" role="button" aria-disabled="true">Appointment</a>
+            </div></form>
           </div>     
     </div>
   </div>
@@ -68,8 +73,9 @@
 
   <div class="row" style="--bs-gutter-x: 0;">  
     <div class="col-md-6  ">
-      <div class="card ms-5" style="height: 600px; width: 500px;" > <img src="static/images/cardialogy.png" alt="not find image" style="height:300px; width: 100%; object-fit:fill;">
+      <div class="card ms-5" style="height: 600px; width: 500px; " > <img src="static/images/cardialogy.png" alt="not find image" style="height:300px; width: 100%; object-fit:fill;">
           <div class="card-body"> 
+            <form action="{% url 'lab' %}" method="GET"> 
             <h3 class="card-title">Cardiology Tests</h3>
             <p class="card-text"><ul>
                 <li>ECG (Electrocardiogram)</li>
@@ -79,13 +85,14 @@
             </ul></p>
           </div>
           <div class="card-footer">
-              <a class="btn btn-primary " href="#" role="button" aria-disabled="true">Appointment</a>
-            </div>
+              <a class="btn btn-primary " href="{% url 'lab' %}?Testname=Cardiology Tests" role="button" aria-disabled="true">Appointment</a>
+            </div></form>
         </div>
         </div>
     <div class="col-md-6 ">
-      <div class="card" style="height: 600px; width: 500px; " > <img src="static/images/Orthopedics.png" alt="not find image" style="height:300px; width: 100%; object-fit:fill;">
+      <div class="card ms-4" style="height: 600px; width: 500px; " > <img src="static/images/Orthopedics.png" alt="not find image" style="height:300px; width: 100%; object-fit:fill;">
           <div class="card-body"> 
+            <form action="{% url 'lab' %}" method="GET"> 
             <h3 class="card-title">Orthopedics (Bones & Joints)</h3>
             <p class="card-text"><ul>
                 <li>DEXA Scan (Bone Density Test)</li>
@@ -93,8 +100,8 @@
             </ul></p>
           </div>
           <div class="card-footer">
-              <a class="btn btn-primary " href="#" role="button" aria-disabled="true">Appointment</a>
-            </div>
+              <a class="btn btn-primary " href="{% url 'lab' %}?Testname=Orthopedics" role="button" aria-disabled="true">Appointment</a>
+            </div></form>
         </div>
         </div>
    
