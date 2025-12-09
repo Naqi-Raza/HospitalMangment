@@ -36,7 +36,7 @@
                             <!-- Example Row -->
                              {% for obj in record %}
                             <tr>
-                                <td>1</td>
+                                <td>{{forloop.counter }}</td>
                                 <td>{{obj.petient_name}}</td>
                                 <td>{{obj.Adress}}</td>
                                 <td>{{obj.Cell_no}}</td>

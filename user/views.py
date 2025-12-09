@@ -251,3 +251,6 @@ def lab_appointment(request):
         return render(request, "home.html")  # redirect to success page
 
     return render(request, "lab.html")
+def lab_data(request):
+    appointments = LabAppointment.objects.all().order_by('-appointment_date')
+    return render(request, 'lab_data.html', {'appointments': appointments})

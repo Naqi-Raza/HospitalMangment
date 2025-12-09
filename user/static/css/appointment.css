@@ -26,7 +26,7 @@
     margin-left: 30%;
     height: 600px; 
     width: 40%;
-    border: 3px solid rgb(33, 148, 50);
+    border: 3px solid rgb(168, 189, 171);
     border-radius: 9px;
 
 
@@ -120,4 +120,21 @@
 .slip .secondary:hover {
   background-color: #5c636a;
 }
-
+@media print {
+    body * {
+        visibility: hidden;  /* hide all page content */
+    }
+    .slip, .slip * {
+        visibility: visible; /* only show slip and its children */
+    }
+    .slip {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+    /* optional: remove buttons while printing */
+    .slip button {
+        display: none;
+    }
+}
